@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "caffe/caffe.hpp"
 #import <opencv2/opencv.hpp>
-#import <opencv2/highgui/ios.h>
+#import <opencv2/imgcodecs/ios.h>
 #include <iosfwd>
 #include <memory>
 #include <string>

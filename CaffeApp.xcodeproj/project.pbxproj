@@ -102,7 +102,6 @@
 		888C36B01B5091220012410E /* caffe.proto in Sources */ = {isa = PBXBuildFile; fileRef = 888C36AB1B508D300012410E /* caffe.proto */; };
 		889BC3381B506EE700F4EB41 /* Classifier.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8824C88A1B506B8D0016CC3D /* Classifier.mm */; };
 		889BC3391B506EE800F4EB41 /* Classifier.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8824C88A1B506B8D0016CC3D /* Classifier.mm */; };
-		88BE9ED21B5747030076137A /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88BE9ED11B5747030076137A /* opencv2.framework */; };
 		88BE9ED31B5749020076137A /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88BE9ED11B5747030076137A /* opencv2.framework */; };
 		88BE9ED41B5749060076137A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885E91B31B50766D003B736E /* AudioToolbox.framework */; };
 		88BE9ED51B5749090076137A /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885E91B11B507664003B736E /* Accelerate.framework */; };
@@ -111,6 +110,7 @@
 		88BE9ED91B5749E60076137A /* libprotoc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 885E91B91B507693003B736E /* libprotoc.a */; };
 		88BE9EE21B5763C70076137A /* model in Resources */ = {isa = PBXBuildFile; fileRef = 88BE9EE11B5763C70076137A /* model */; };
 		88BE9EE31B5763C70076137A /* model in Resources */ = {isa = PBXBuildFile; fileRef = 88BE9EE11B5763C70076137A /* model */; };
+		9905B82C1B8771DF004086FB /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9905B82B1B8771DF004086FB /* opencv2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -331,6 +331,7 @@
 		888C36AB1B508D300012410E /* caffe.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = caffe.proto; sourceTree = "<group>"; };
 		88BE9ED11B5747030076137A /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		88BE9EE11B5763C70076137A /* model */ = {isa = PBXFileReference; lastKnownFileType = folder; path = model; sourceTree = SOURCE_ROOT; };
+		9905B82B1B8771DF004086FB /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../ios/opencv2.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -338,9 +339,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9905B82C1B8771DF004086FB /* opencv2.framework in Frameworks */,
 				8870DA491B5920FC0053CB1B /* libleveldb.a in Frameworks */,
 				885E91BA1B507693003B736E /* libglog.a in Frameworks */,
-				88BE9ED21B5747030076137A /* opencv2.framework in Frameworks */,
 				885E91B41B50766D003B736E /* AudioToolbox.framework in Frameworks */,
 				885E91B21B507664003B736E /* Accelerate.framework in Frameworks */,
 				885E91BC1B507693003B736E /* libprotobuf.a in Frameworks */,
@@ -368,6 +369,7 @@
 		8824C7921B505B940016CC3D = {
 			isa = PBXGroup;
 			children = (
+				9905B82B1B8771DF004086FB /* opencv2.framework */,
 				8824C79D1B505B940016CC3D /* CaffeApp */,
 				8824C7B71B505B940016CC3D /* CaffeAppTests */,
 				8824C79C1B505B940016CC3D /* Products */,
@@ -1016,6 +1018,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CaffeApp",
+					/Users/njimenez/ios,
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -1047,6 +1050,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CaffeApp",
+					/Users/njimenez/ios,
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = "CPU_ONLY=1";
 				HEADER_SEARCH_PATHS = (
