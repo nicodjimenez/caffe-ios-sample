@@ -71,14 +71,9 @@
 		885E91521B507651003B736E /* spp_layer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 885E90851B507651003B736E /* spp_layer.cpp */; };
 		885E91531B507651003B736E /* tanh_layer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 885E90861B507651003B736E /* tanh_layer.cpp */; };
 		885E91551B507651003B736E /* threshold_layer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 885E90881B507651003B736E /* threshold_layer.cpp */; };
-		885E91581B507651003B736E /* net.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 885E908B1B507651003B736E /* net.cpp */; };
-		885E915A1B507651003B736E /* solver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 885E908E1B507651003B736E /* solver.cpp */; };
 		885E915B1B507651003B736E /* syncedmem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 885E908F1B507651003B736E /* syncedmem.cpp */; };
 		885E919C1B507651003B736E /* benchmark.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 885E90D31B507651003B736E /* benchmark.cpp */; };
 		885E919D1B507651003B736E /* cudnn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 885E90D41B507651003B736E /* cudnn.cpp */; };
-		885E919E1B507651003B736E /* db.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 885E90D51B507651003B736E /* db.cpp */; };
-		885E919F1B507651003B736E /* db_leveldb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 885E90D61B507651003B736E /* db_leveldb.cpp */; };
-		885E91A01B507651003B736E /* db_lmdb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 885E90D71B507651003B736E /* db_lmdb.cpp */; };
 		885E91A21B507651003B736E /* im2col.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 885E90D91B507651003B736E /* im2col.cpp */; };
 		885E91A31B507651003B736E /* im2col.cu in Resources */ = {isa = PBXBuildFile; fileRef = 885E90DA1B507651003B736E /* im2col.cu */; };
 		885E91A41B507651003B736E /* insert_splits.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 885E90DB1B507651003B736E /* insert_splits.cpp */; };
@@ -111,6 +106,8 @@
 		88BE9EE31B5763C70076137A /* model in Resources */ = {isa = PBXBuildFile; fileRef = 88BE9EE11B5763C70076137A /* model */; };
 		9905B82C1B8771DF004086FB /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9905B82B1B8771DF004086FB /* opencv2.framework */; };
 		9905B82D1B879E5E004086FB /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9905B82B1B8771DF004086FB /* opencv2.framework */; };
+		990D9A541B883915001456BA /* apollonet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 990D9A521B883915001456BA /* apollonet.cpp */; };
+		990D9A551B883915001456BA /* tensor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 990D9A531B883915001456BA /* tensor.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -331,6 +328,8 @@
 		888C36AB1B508D300012410E /* caffe.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = caffe.proto; sourceTree = "<group>"; };
 		88BE9EE11B5763C70076137A /* model */ = {isa = PBXFileReference; lastKnownFileType = folder; path = model; sourceTree = SOURCE_ROOT; };
 		9905B82B1B8771DF004086FB /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../ios/opencv2.framework; sourceTree = "<group>"; };
+		990D9A521B883915001456BA /* apollonet.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = apollonet.cpp; path = caffe/src/caffe/apollonet.cpp; sourceTree = "<group>"; };
+		990D9A531B883915001456BA /* tensor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = tensor.cpp; path = caffe/src/caffe/tensor.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -368,6 +367,8 @@
 		8824C7921B505B940016CC3D = {
 			isa = PBXGroup;
 			children = (
+				990D9A521B883915001456BA /* apollonet.cpp */,
+				990D9A531B883915001456BA /* tensor.cpp */,
 				9905B82B1B8771DF004086FB /* opencv2.framework */,
 				8824C79D1B505B940016CC3D /* CaffeApp */,
 				8824C7B71B505B940016CC3D /* CaffeAppTests */,
@@ -807,6 +808,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				990D9A541B883915001456BA /* apollonet.cpp in Sources */,
+				990D9A551B883915001456BA /* tensor.cpp in Sources */,
 				888C36B01B5091220012410E /* caffe.proto in Sources */,
 				885E90FE1B507651003B736E /* base_conv_layer.cpp in Sources */,
 				885E91501B507651003B736E /* split_layer.cpp in Sources */,
@@ -822,7 +825,6 @@
 				885E90F71B507651003B736E /* internal_thread.cpp in Sources */,
 				885E91311B507651003B736E /* loss_layer.cpp in Sources */,
 				885E91391B507651003B736E /* pooling_layer.cpp in Sources */,
-				885E915A1B507651003B736E /* solver.cpp in Sources */,
 				885E91A61B507651003B736E /* math_functions.cpp in Sources */,
 				885E91361B507651003B736E /* mvn_layer.cpp in Sources */,
 				885E91A21B507651003B736E /* im2col.cpp in Sources */,
@@ -830,13 +832,11 @@
 				885E90FC1B507651003B736E /* argmax_layer.cpp in Sources */,
 				885E91111B507651003B736E /* cudnn_softmax_layer.cpp in Sources */,
 				885E914A1B507651003B736E /* slice_layer.cpp in Sources */,
-				885E919E1B507651003B736E /* db.cpp in Sources */,
 				885E913B1B507651003B736E /* power_layer.cpp in Sources */,
 				885E911F1B507651003B736E /* exp_layer.cpp in Sources */,
 				885E91481B507651003B736E /* silence_layer.cpp in Sources */,
 				885E91051B507651003B736E /* contrastive_loss_layer.cpp in Sources */,
 				885E91011B507651003B736E /* bnll_layer.cpp in Sources */,
-				885E91A01B507651003B736E /* db_lmdb.cpp in Sources */,
 				8824C7A41B505B940016CC3D /* AppDelegate.m in Sources */,
 				885E910B1B507651003B736E /* cudnn_pooling_layer.cpp in Sources */,
 				885E911D1B507651003B736E /* euclidean_loss_layer.cpp in Sources */,
@@ -859,7 +859,6 @@
 				885E90FB1B507651003B736E /* accuracy_layer.cpp in Sources */,
 				885E91181B507651003B736E /* dropout_layer.cpp in Sources */,
 				885E90FF1B507651003B736E /* base_data_layer.cpp in Sources */,
-				885E91581B507651003B736E /* net.cpp in Sources */,
 				885E91291B507651003B736E /* im2col_layer.cpp in Sources */,
 				885E91411B507651003B736E /* relu_layer.cpp in Sources */,
 				885E90F31B507651003B736E /* blob.cpp in Sources */,
@@ -879,7 +878,6 @@
 				885E91AC1B507651003B736E /* gflags_reporting.cc in Sources */,
 				885E912D1B507651003B736E /* inner_product_layer.cpp in Sources */,
 				885E90F81B507651003B736E /* layer_factory.cpp in Sources */,
-				885E919F1B507651003B736E /* db_leveldb.cpp in Sources */,
 				885E912F1B507651003B736E /* log_layer.cpp in Sources */,
 				885E91321B507651003B736E /* lrn_layer.cpp in Sources */,
 				885E91A51B507651003B736E /* io.cpp in Sources */,
