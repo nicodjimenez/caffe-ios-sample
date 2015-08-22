@@ -212,10 +212,6 @@
 		885E90541B507650003B736E /* filter_layer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = filter_layer.cpp; sourceTree = "<group>"; };
 		885E90551B507650003B736E /* filter_layer.cu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = filter_layer.cu; sourceTree = "<group>"; };
 		885E90561B507650003B736E /* flatten_layer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = flatten_layer.cpp; sourceTree = "<group>"; };
-		885E90571B507650003B736E /* hdf5_data_layer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = hdf5_data_layer.cpp; sourceTree = "<group>"; };
-		885E90581B507650003B736E /* hdf5_data_layer.cu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hdf5_data_layer.cu; sourceTree = "<group>"; };
-		885E90591B507650003B736E /* hdf5_output_layer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = hdf5_output_layer.cpp; sourceTree = "<group>"; };
-		885E905A1B507650003B736E /* hdf5_output_layer.cu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hdf5_output_layer.cu; sourceTree = "<group>"; };
 		885E905B1B507650003B736E /* hinge_loss_layer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = hinge_loss_layer.cpp; sourceTree = "<group>"; };
 		885E905C1B507650003B736E /* im2col_layer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = im2col_layer.cpp; sourceTree = "<group>"; };
 		885E905D1B507650003B736E /* im2col_layer.cu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = im2col_layer.cu; sourceTree = "<group>"; };
@@ -264,8 +260,6 @@
 		885E90881B507651003B736E /* threshold_layer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = threshold_layer.cpp; sourceTree = "<group>"; };
 		885E90891B507651003B736E /* threshold_layer.cu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = threshold_layer.cu; sourceTree = "<group>"; };
 		885E908A1B507651003B736E /* window_data_layer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = window_data_layer.cpp; sourceTree = "<group>"; };
-		885E908B1B507651003B736E /* net.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = net.cpp; sourceTree = "<group>"; };
-		885E908E1B507651003B736E /* solver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = solver.cpp; sourceTree = "<group>"; };
 		885E908F1B507651003B736E /* syncedmem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = syncedmem.cpp; sourceTree = "<group>"; };
 		885E90D31B507651003B736E /* benchmark.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = benchmark.cpp; sourceTree = "<group>"; };
 		885E90D41B507651003B736E /* cudnn.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cudnn.cpp; sourceTree = "<group>"; };
@@ -454,9 +448,7 @@
 				885E90291B507650003B736E /* internal_thread.cpp */,
 				885E902A1B507650003B736E /* layer_factory.cpp */,
 				885E902B1B507650003B736E /* layers */,
-				885E908B1B507651003B736E /* net.cpp */,
 				885E908C1B507651003B736E /* proto */,
-				885E908E1B507651003B736E /* solver.cpp */,
 				885E908F1B507651003B736E /* syncedmem.cpp */,
 				885E90D21B507651003B736E /* util */,
 			);
@@ -509,10 +501,6 @@
 				885E90541B507650003B736E /* filter_layer.cpp */,
 				885E90551B507650003B736E /* filter_layer.cu */,
 				885E90561B507650003B736E /* flatten_layer.cpp */,
-				885E90571B507650003B736E /* hdf5_data_layer.cpp */,
-				885E90581B507650003B736E /* hdf5_data_layer.cu */,
-				885E90591B507650003B736E /* hdf5_output_layer.cpp */,
-				885E905A1B507650003B736E /* hdf5_output_layer.cu */,
 				885E905B1B507650003B736E /* hinge_loss_layer.cpp */,
 				885E905C1B507650003B736E /* im2col_layer.cpp */,
 				885E905D1B507650003B736E /* im2col_layer.cu */,
